@@ -164,15 +164,13 @@ extension URLSession {
     
 }
 extension URL {
-//http://mbcapps.mstudio.live:8081/mStudioServicev1/mStudioMobileWebService.asmx/GetHomeInfo?accessToken=@aCCess$321tOKeN@987&channelId=1&userId=0&languageId=2
+
     
     init?(method: String) {
-        let baseUrl = "http://mbcapps.mstudio.live:8081/mStudioServicev1/mStudioMobileWebService.asmx/"
-//        "http://mbcapps.mstudio.live:8081/mStudioServicev1/mStudioMobileWebService.asmx/"
-        let url = "\(baseUrl)\(method)?accessToken=@aCCess$321tOKeN@987&channelId=1&userId=0&languageId=2"
+
+        let url = "https://jsonplaceholder.typicode.com/posts/1"
         
-//                url = "\(loggedUser.tenantURL)/webservice/lmsservice.asmx/\(method)"
-            
+
             self.init(string: url)
         
     }
